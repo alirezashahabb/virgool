@@ -2,7 +2,7 @@ import { BaseEntity } from "src/common/abstract/base.entity";
 import { EntityName } from "src/common/enum/entity";
 import { Column, Entity } from "typeorm";
 
-@Entity(EntityName.Prifle)
+@Entity(EntityName.Profile)
 
 export class ProfileEntity extends BaseEntity {
 @Column()

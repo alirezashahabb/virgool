@@ -5,15 +5,17 @@ import { AuthService } from './auth.service';
 import { AuthDto } from './dto/auth.dto';
 
 @Controller('auth')
+// for Use Swagger
 @ApiTags("Auth")
 export class AuthController {
 
   constructor(private readonly authService: AuthService) {}
 
   @Post('user_existent')
+  // for Text Feild input
   @ApiConsumes(SwaggerConsumes.UrlEncode , SwaggerConsumes.Json)
   userExistent(@Body() authDto : AuthDto) {
-    return this.authService.userExistent(authDto);
+    return this.authService.userExistent(authDto) ;
   }
   
 }

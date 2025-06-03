@@ -1,5 +1,6 @@
 export enum EntityName {
     User = 'User',
-    Prifle = 'Profile',
+    Profile = 'Profile',
+    otp = 'Otp',
   
 }
