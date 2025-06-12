@@ -57,7 +57,7 @@ export class AuthService {
       case AuthMethod.Username:
         return userName;
       default:
-        throw new UnauthorizedException('نام کاربرب وجود ندارد');
+        throw new UnauthorizedException('نام کاربری وجود ندارد');
     }
   }
 }
